@@ -9,7 +9,12 @@ https://www.hackernoon.com/how-to-access-your-raspberry-pi-camera-from-anywhere-
 - caddy
 - lightpd
 - h2
+- node
 - other
+
+nodesettings
+
+
 
 how to store settings
 
