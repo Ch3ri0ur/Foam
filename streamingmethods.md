@@ -38,7 +38,7 @@ http://www.netzmafia.de/skripten/hardware/RasPi/kamera/index.html
 
 raspivid not prefered method anymore now v4l2 is prefered src: https://qastack.com.de/raspberrypi/7446/how-can-i-stream-h-264-video-from-the-raspberry-pi-camera-module-via-a-web-serve
 
-mpeg is alt -> bad compression and single images 
+mpeg is veraltet -> bad compression and single images 
 
 h264 mjpeg [dash-mpeg](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) rtsp/rtmp/rtp [m3u8](https://qastack.com.de/raspberrypi/7446/how-can-i-stream-h-264-video-from-the-raspberry-pi-camera-module-via-a-web-serve)(utf8 variante von m3u) hls difference?
 
