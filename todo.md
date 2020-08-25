@@ -1,6 +1,6 @@
 # Todo
 
--   [ ] Aggregate Streaming Methods [[streamingmethods]]
+-   [x] Aggregate Streaming Methods [[streamingmethods]]
 -   [ ] CRA 4.0...
 -   [ ] WebRTC [[webRTC]]
     -   [ ] explore uv4l and how to embed into website
