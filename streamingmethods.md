@@ -98,7 +98,7 @@ big problem wit surveillance solutions -> bad latency
 | python picamera  raspivid->clvc |                        python                        | https://draeger-it.blog/raspberry-pi-camera-b01/                                                                           |
 |                                 |                                                      | https://randomnerdtutorials.com/video-streaming-with-raspberry-pi-camera/                                                  |
 |      raspivid    gstreamer      |                      from 2013                       | http://blog.tkjelectronics.dk/2013/06/how-to-stream-video-and-audio-from-a-raspberry-pi-with-no-latency/                   |
-|                                 |                 2s latency from 2019                 | https://gist.github.com/neilyoung/8216c6cf0c7b69e25a152fde1c022a5d                                                         |
+|                                 |     vlc player 0ms buffer 0,6s latency from 2019     | https://gist.github.com/neilyoung/8216c6cf0c7b69e25a152fde1c022a5d                                                         |
 |      rpi-cam-web-interface      |                      php  mjpeg                      | https://elinux.org/RPi-Cam-Web-Interface                                                                                   |
 |          v4l2rtpserver          |    hls not supported on browsers ( apple stuff )     | https://github.com/mpromonet/v4l2rtspserver                                                                                |
 
