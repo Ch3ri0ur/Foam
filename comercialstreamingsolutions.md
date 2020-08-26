@@ -1,5 +1,5 @@
-# Comercial solutions
-probaly not Accepted
+# Commercial solutions
+probably not Accepted
 
 
 ## Restream/Broadcast Services
@@ -13,13 +13,13 @@ Pricing:\
 6-100$/month\
 https://www.angelcam.com/pricing/
 
-### FlaschPhoner
+### FlashPhoner
 Pricing:\
 75$/month\
 https://flashphoner.com/webrtc-streaming-server-for-live-broadcasting-and-webinars/
 
 ## Server Software for Brodcast
-### FlaschPhoner
+### FlashPhoner
 Pricing:\
 2000$/Serverlicenc\
 https://flashphoner.com/webrtc-streaming-server-for-live-broadcasting-and-webinars/
