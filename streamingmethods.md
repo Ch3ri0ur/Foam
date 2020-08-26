@@ -71,35 +71,36 @@ big problem wit surveillance solutions -> bad latency
 - Node Server
 - Just other Server
 
-|              notes              |                   qualifies                    | source                                                                                                                     |
-| :-----------------------------: | :--------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------- |
-|              mjpeg              |                       no                       | https://appuals.com/how-to-perform-video-streaming-using-raspberry-pi/                                                     |
-|         mjpeg_streamer          |                       no                       | https://www.tomshardware.com/how-to/use-raspberry-pi-as-pc-webcam                                                          |
-|              uv4l               |                     kinda                      | http://www.linux-projects.org/uv4l/                                                                                        |
-|       uv4l nc or multicat       |                                                | http://frozen.ca/streaming-raw-h-264-from-a-raspberry-pi/                                                                  |
-|                                 |             kinda not open source              | https://www.instructables.com/id/Raspberry-Pi-Video-Streaming/                                                             |
-|                                 |                                                | https://medium.com/home-wireless/headless-streaming-video-with-the-raspberry-pi-zero-w-and-raspberry-pi-camera-38bef1968e1 |
-|                                 |                                                | https://github.com/PietroAvolio/uv4l-webrtc-raspberry-pi                                                                   |
-|             motion              |                 not realtime?                  | https://www.hackster.io/narender-singh/portable-video-streaming-camera-with-raspberry-pi-zero-w-dc22fd                     |
-|                                 |                                                | https://hada-tech.com/index.php/2020/06/07/live-stream-usb-camera-with-raspberry-pi/                                       |
-|    raspivid -> cvlc -> rtsp     |                  lag i think                   | https://raspberry-projects.com/pi/pi-hardware/raspberry-pi-camera/streaming-video-using-vlc-player                         |
-|                                 |                                                | https://bitsnblobs.com/ip-camera-using-the-raspberry-pi-zero/                                                              |
-|       cvlc comprehensive        |                                                | https://stackoverflow.com/questions/49846400/raspberry-pi-use-vlc-to-stream-webcam-logitech-c920-h264-video-without-tran   |
-|         ffmpeg -> rtsp          |          rtsp not browser supported?           | https://codecalamity.com/raspberry-pi-hardware-accelerated-h264-webcam-security-camera/                                    |
-|           ffmpeg mpeg           |                      mpeg                      | https://phoboslab.org/log/2013/09/html5-live-video-streaming-via-websockets                                                |
-|  raspivid -> ffmpeg -> youtube  |                not what we need                | https://www.digikey.com/en/maker/blogs/streaming-live-to-youtube-and-facebook-using-raspberry-pi-camera                    |
-|                                 |                                                | https://raspberrypi.stackexchange.com/questions/115889/best-way-to-stream-usb-camera-video-in-2020                         |
-|        raspivid directly        |                      nope                      | https://wiki.marcluerssen.de/index.php?title=Raspberry_Pi/Camera_streaming                                                 |
-|              v4l2               |         perhaps  not same application          | https://siytek.com/raspberry-pi-rtsp-to-home-assistant/                                                                    |
-|                                 |                                                | https://www.ics.com/blog/raspberry-pi-camera-module#.VJFhbyvF-b8                                                           |
-|    pyserver webrtc remoteme     | ?? its for rc applications so perhaps its okay | https://remoteme.org/raspberry-pi/                                                                                         |
-|    pyserver picamera  ffmpeg    |                                                | https://nerdhut.de/2018/12/17/low-latency-and-high-fps-camera-stream-with-raspberry-pi/                                    |
-| python picamera  raspivid->clvc |                     python                     | https://draeger-it.blog/raspberry-pi-camera-b01/                                                                           |
-|                                 |                                                | https://randomnerdtutorials.com/video-streaming-with-raspberry-pi-camera/                                                  |
-|      raspivid    gstreamer      |                   from 2013                    | http://blog.tkjelectronics.dk/2013/06/how-to-stream-video-and-audio-from-a-raspberry-pi-with-no-latency/                   |
-|                                 |              2s latency from 2019              | https://gist.github.com/neilyoung/8216c6cf0c7b69e25a152fde1c022a5d                                                         |
-|      rpi-cam-web-interface      |                   php  mjpeg                   | https://elinux.org/RPi-Cam-Web-Interface                                                                                   |
-|          v4l2rtpserver          | hls not supported on browsers ( apple stuff )  | https://github.com/mpromonet/v4l2rtspserver                                                                                |
+|              notes              |                      qualifies                       | source                                                                                                                     |
+| :-----------------------------: | :--------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------- |
+|              mjpeg              |                          no                          | https://appuals.com/how-to-perform-video-streaming-using-raspberry-pi/                                                     |
+|         mjpeg_streamer          |                          no                          | https://www.tomshardware.com/how-to/use-raspberry-pi-as-pc-webcam                                                          |
+|              uv4l               |                        kinda                         | http://www.linux-projects.org/uv4l/                                                                                        |
+|                                 | promising 150ms latency but only one client possible | http://www.linux-projects.org/uv4l/tutorials/custom-webapp-with-face-detection/                                            |
+|       uv4l nc or multicat       |                                                      | http://frozen.ca/streaming-raw-h-264-from-a-raspberry-pi/                                                                  |
+|                                 |                kinda not open source                 | https://www.instructables.com/id/Raspberry-Pi-Video-Streaming/                                                             |
+|                                 |                                                      | https://medium.com/home-wireless/headless-streaming-video-with-the-raspberry-pi-zero-w-and-raspberry-pi-camera-38bef1968e1 |
+|                                 |                                                      | https://github.com/PietroAvolio/uv4l-webrtc-raspberry-pi                                                                   |
+|             motion              |                    not realtime?                     | https://www.hackster.io/narender-singh/portable-video-streaming-camera-with-raspberry-pi-zero-w-dc22fd                     |
+|                                 |                                                      | https://hada-tech.com/index.php/2020/06/07/live-stream-usb-camera-with-raspberry-pi/                                       |
+|    raspivid -> cvlc -> rtsp     |                     lag i think                      | https://raspberry-projects.com/pi/pi-hardware/raspberry-pi-camera/streaming-video-using-vlc-player                         |
+|                                 |                                                      | https://bitsnblobs.com/ip-camera-using-the-raspberry-pi-zero/                                                              |
+|       cvlc comprehensive        |                                                      | https://stackoverflow.com/questions/49846400/raspberry-pi-use-vlc-to-stream-webcam-logitech-c920-h264-video-without-tran   |
+|         ffmpeg -> rtsp          |             rtsp not browser supported?              | https://codecalamity.com/raspberry-pi-hardware-accelerated-h264-webcam-security-camera/                                    |
+|           ffmpeg mpeg           |                         mpeg                         | https://phoboslab.org/log/2013/09/html5-live-video-streaming-via-websockets                                                |
+|  raspivid -> ffmpeg -> youtube  |                   not what we need                   | https://www.digikey.com/en/maker/blogs/streaming-live-to-youtube-and-facebook-using-raspberry-pi-camera                    |
+|                                 |                                                      | https://raspberrypi.stackexchange.com/questions/115889/best-way-to-stream-usb-camera-video-in-2020                         |
+|        raspivid directly        |                         nope                         | https://wiki.marcluerssen.de/index.php?title=Raspberry_Pi/Camera_streaming                                                 |
+|              v4l2               |            perhaps  not same application             | https://siytek.com/raspberry-pi-rtsp-to-home-assistant/                                                                    |
+|                                 |                                                      | https://www.ics.com/blog/raspberry-pi-camera-module#.VJFhbyvF-b8                                                           |
+|    pyserver webrtc remoteme     |    ?? its for rc applications so perhaps its okay    | https://remoteme.org/raspberry-pi/                                                                                         |
+|    pyserver picamera  ffmpeg    |                                                      | https://nerdhut.de/2018/12/17/low-latency-and-high-fps-camera-stream-with-raspberry-pi/                                    |
+| python picamera  raspivid->clvc |                        python                        | https://draeger-it.blog/raspberry-pi-camera-b01/                                                                           |
+|                                 |                                                      | https://randomnerdtutorials.com/video-streaming-with-raspberry-pi-camera/                                                  |
+|      raspivid    gstreamer      |                      from 2013                       | http://blog.tkjelectronics.dk/2013/06/how-to-stream-video-and-audio-from-a-raspberry-pi-with-no-latency/                   |
+|                                 |                 2s latency from 2019                 | https://gist.github.com/neilyoung/8216c6cf0c7b69e25a152fde1c022a5d                                                         |
+|      rpi-cam-web-interface      |                      php  mjpeg                      | https://elinux.org/RPi-Cam-Web-Interface                                                                                   |
+|          v4l2rtpserver          |    hls not supported on browsers ( apple stuff )     | https://github.com/mpromonet/v4l2rtspserver                                                                                |
 
 https://raspberrypi.stackexchange.com/questions/27082/how-to-stream-raspivid-to-linux-and-osx-using-gstreamer-vlc-or-netcat 
 
