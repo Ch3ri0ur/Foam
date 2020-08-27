@@ -8,7 +8,7 @@
   - not more languages (not php)
 
 ## Methods
-Comparission diefferent Types:\
+Comparison different Types:\
  https://flashphoner.com/how-to-broadcast-webrtc-rtsp-and-rtmp-streams-to-media-source-extensions-via-the-websocket-protocol/
 
 
