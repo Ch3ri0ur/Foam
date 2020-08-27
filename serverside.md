@@ -14,7 +14,8 @@ https://www.hackernoon.com/how-to-access-your-raspberry-pi-camera-from-anywhere-
 
 nodesettings
 
-
+ws alternative 
+https://github.com/uNetworking/uWebSockets
 
 how to store settings
 
