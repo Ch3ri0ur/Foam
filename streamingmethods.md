@@ -9,7 +9,8 @@
 
 ## Methods
 Comparison different Types:\
- https://flashphoner.com/how-to-broadcast-webrtc-rtsp-and-rtmp-streams-to-media-source-extensions-via-the-websocket-protocol/
+ https://flashphoner.com/how-to-broadcast-webrtc-rtsp-and-rtmp-streams-to-media-source-extensions-via-the-websocket-protocol/\
+ https://www.ipcamlive.com/faqs
 
 
 - get an ip camera ? for surveillance so perhaps not good latency
