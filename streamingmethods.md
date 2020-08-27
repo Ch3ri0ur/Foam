@@ -8,6 +8,9 @@
   - not more languages (not php)
 
 ## Methods
+Comparission diefferent Types:\
+ https://flashphoner.com/how-to-broadcast-webrtc-rtsp-and-rtmp-streams-to-media-source-extensions-via-the-websocket-protocol/
+
 
 - get an ip camera ? for surveillance so perhaps not good latency
   - https://www.controlbooth.com/threads/low-latency-ip-cameras.45601/
