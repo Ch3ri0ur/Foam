@@ -105,7 +105,9 @@ big problem wit surveillance solutions -> bad latency
 |      raspivid    gstreamer      |                      from 2013                       | http://blog.tkjelectronics.dk/2013/06/how-to-stream-video-and-audio-from-a-raspberry-pi-with-no-latency/                   |
 |                                 |     vlc player 0ms buffer 0,6s latency from 2019     | https://gist.github.com/neilyoung/8216c6cf0c7b69e25a152fde1c022a5d                                                         |
 |      rpi-cam-web-interface      |                      php  mjpeg                      | https://elinux.org/RPi-Cam-Web-Interface                                                                                   |
+|      medooze-media-server       |            not tested, bad documentation             | https://github.com/medooze/media-server-node                                                                               |
 |          v4l2rtpserver          |    hls not supported on browsers ( apple stuff )     | https://github.com/mpromonet/v4l2rtspserver                                                                                |
+|         webrtc-streamer         |     bad documentation unclear resolution config      | https://github.com/mpromonet/webrtc-streamer                                                                               |
 
 https://raspberrypi.stackexchange.com/questions/27082/how-to-stream-raspivid-to-linux-and-osx-using-gstreamer-vlc-or-netcat 
 
