@@ -68,6 +68,8 @@ concern that needs to be addressed
 
 boardcasting stuff
 thought there was something possible with janus as a server
+MedienServer
+- Medooze-Media-Server für NodeJs: Compiling Fails https://openbase.io/js/medooze-media-server
 
 big problem wit surveillance solutions -> bad latency 
 
@@ -96,7 +98,7 @@ big problem wit surveillance solutions -> bad latency
 |  raspivid -> ffmpeg -> youtube  |                   not what we need                   | https://www.digikey.com/en/maker/blogs/streaming-live-to-youtube-and-facebook-using-raspberry-pi-camera                    |
 |                                 |                                                      | https://raspberrypi.stackexchange.com/questions/115889/best-way-to-stream-usb-camera-video-in-2020                         |
 |        raspivid directly        |                         nope                         | https://wiki.marcluerssen.de/index.php?title=Raspberry_Pi/Camera_streaming                                                 |
-|              v4l2               |            perhaps  not same application             | https://siytek.com/raspberry-pi-rtsp-to-home-assistant/                                                                    |
+|              v4l2               |            perhaps  not same application             | https://siytek.com/raspberry-pi-rtsp-to-home-assistant/                                                              |
 |                                 |                                                      | https://www.ics.com/blog/raspberry-pi-camera-module#.VJFhbyvF-b8                                                           |
 |    pyserver webrtc remoteme     |    ?? its for rc applications so perhaps its okay    | https://remoteme.org/raspberry-pi/                                                                                         |
 |    pyserver picamera  ffmpeg    |                                                      | https://nerdhut.de/2018/12/17/low-latency-and-high-fps-camera-stream-with-raspberry-pi/                                    |

@@ -18,6 +18,11 @@ Pricing:\
 75$/month\
 https://flashphoner.com/webrtc-streaming-server-for-live-broadcasting-and-webinars/
 
+### NanoCosmos
+Pricing:\
+199€/month\
+https://www.nanocosmos.de/v6/
+
 ## Server Software for Brodcast
 ### FlashPhoner
 Pricing:\
