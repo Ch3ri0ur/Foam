@@ -78,7 +78,7 @@ good setup/maintenance
 fallback to mjpeg needs flag in chrome/firefox -> rly bad
 
 Gstreamer complexity of multiplexers
-https://gstreamer.freedesktop.org/data/events/gstreamer-conference/2017/Matthew Waters - GStreamer WebRTC.pdf
+[Matthew Waters - GStreamer WebRTC.pdf](https://gstreamer.freedesktop.org/data/events/gstreamer-conference/2017/Matthew%20Waters%20-%20GStreamer%20WebRTC.pdf)
 
 big problem wit surveillance solutions -> bad latency 
 
