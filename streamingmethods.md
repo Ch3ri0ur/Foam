@@ -26,6 +26,8 @@ Comparison different Types:\
 - [ffmpeg](https://ffmpeg.org) 
   - https://en.wikipedia.org/wiki/FFmpeg ( what is [avconv](https://libav.org/avconv.html) last news blog 12.02.2018)
 - netcat (nc ) for streaming / vlc else
+- [RazTot](https://github.com/benbusby/raztot) gstreamer janus interessting setup.sh file 
+  - didn't work -> janus threw errors (also libnice problem with configure.ac (got it from other repository ))
 ## Other stuff
 
 good collection 
