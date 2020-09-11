@@ -48,6 +48,7 @@
     -   [ ] website serven oder durchleiten
     -   [ ] Website auf PI / ReverseProxy zeigt auf die Seiten
 -   [ ] tests schreiben =)
+-   [ ] Automatischer Start von allem (services)
 -   [ ] dynamisch chart generieren
 -   [ ] download zeug bzw extrahieren
 -   [ ] First run Example schreiben
