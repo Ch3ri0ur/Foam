@@ -28,3 +28,12 @@ https://www.nanocosmos.de/v6/
 Pricing:\
 2000$/Serverlicenc\
 https://flashphoner.com/webrtc-streaming-server-for-live-broadcasting-and-webinars/
+
+
+
+## Full Soulution
+
+###Alohacam sry verkauft an verkada
+Pricing:\
+5$/month&device
+https://alohartc.com/
