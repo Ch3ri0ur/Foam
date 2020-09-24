@@ -9,6 +9,9 @@ https://github.com/canyanio/janus-gateway-docker
 
 docker pull canyan/janus-gateway:latest does not work (compiled for x86)
 
+canyanio can be compiled for armv7 by following the ci steps of their [repro](https://github.com/canyanio/janus-gateway-docker) 
+
+fruitnanny works with Docker but is older
 
 [Alessandro Amirante - Janus &Docker: friends or foe? a Talk about Deployment](https://www.youtube.com/watch?v=mrV2BQ95UFY)
 
@@ -16,20 +19,16 @@ docker pull canyan/janus-gateway:latest does not work (compiled for x86)
 https://groups.google.com/g/meetecho-janus/search?q=proxy 
 
 
+Following Janus install instructions from their Repro:
 
-Following Janus install instructions:
+didn't work because architecture? 
 
-got libnice checked out version 0.1.17
-installed meson https://mesonbuild.com/Quick-guide.html
-
-didn't work
 
 ### Snap
-Couldnt start http service with port 8088 even though 8088 was not in use
+Couldn't start http service with port 8088 even though 8088 was not in use
 
-### docker 
 
-fruitnanny works with Docker
+
 
 ### Streaming pipelines Comparison
 
@@ -51,6 +50,17 @@ fruitnanny works with Docker
 | no              | 35  |                             |           | Discarding outgoing empty RTP packet                           | gst-launch-1.0 -e v4l2src do-timestamp=true ! video/x-h264,width=1080,height=720,framerate=30/1 ! h264parse ! rtph264pay config-interval=1 ! gdppay ! udpsink host=0.0.0.0 port=8004                                      |
 | no              |     |                             |           | error could not open x display for reading                     | gst-launch-1.0 -v v4l2src ! video/x-raw,width=1080,height=720,framerate=30/1 ! videoscale ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay ! udpsink host=127.0.0.1 port=8004    |
 
+
+## Client-Side-Code 
+
+Some modifications are needed to use the janus.js in the application:
+- import adapter from 'webrtc-adapter'; 
+- Comment out Janus.useOldDependencies;
+- export default Janus;
+
+
+In Client 
+import Janus, {JanusJS} from "./janus"  //JanusJS if .d.ts are needed
 
 
 
