@@ -4,6 +4,13 @@ Limit rerender by not using state changes in higher components, triggering subse
 
 how to display video [[streamingmethods]]
 
+SSE events go into eventqueue and are dealt with in batches -> every 50ms -> no smooth update possible
+
+on requestanimationframe to make updates smoother
+
+antd to make styling easier
+tailwind as alternative
+
 perhaps interesting
 https://stackoverflow.com/questions/29487978/how-to-embed-h264-video-file-in-html-webpage-using-video-tags/29489356
 

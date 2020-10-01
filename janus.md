@@ -27,7 +27,8 @@ didn't work because architecture?
 ### Snap
 Couldn't start http service with port 8088 even though 8088 was not in use
 
-
+### reusing canyan/janus-gateway steps and compile for arm
+Compiled image at ch3ri0ur/janus:latest
 
 
 ### Streaming pipelines Comparison
@@ -65,4 +66,7 @@ import Janus, {JanusJS} from "./janus"  //JanusJS if .d.ts are needed
 ## ICE 1-1Nat mapping
 More on the ICE/NAT problematic in the readme
 https://github.com/bartbalaz/janus-container
+
+## TLS 
+To get around encryption this instance is placed behind a reverse proxy server. The server [[caddy]] was used, to route the janus specific traffic.
 
