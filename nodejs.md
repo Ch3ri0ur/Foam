@@ -14,13 +14,13 @@ sudo apt install -y nodejs
 
 
 
-##Server
+## Server
 
 ```
 sudo npm install -g serve
 ```
 
-###http server
+### HTTP Server
 
 ```
 sudo npm install -g http-server
@@ -31,13 +31,13 @@ https://www.npmjs.com/package/http-server
 
 
 
-##ssl
+## Server with HTTPS / Create Self Signed Certificates
 
 sudo openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
 
 serve --ssl-cert ./cert.pem --ssl-key ./key.pem
 
 
-###https
+### HTTPS
 
 https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/

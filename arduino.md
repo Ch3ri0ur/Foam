@@ -1,4 +1,4 @@
-#Data over arduino
+# Data over Arduino
 
 # Uno
 https://store.arduino.cc/arduino-uno-rev3
