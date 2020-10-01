@@ -33,7 +33,7 @@ https://flashphoner.com/webrtc-streaming-server-for-live-broadcasting-and-webina
 
 ## Full Soulution
 
-###Alohacam sry verkauft an verkada
+### Alohacam sry verkauft an verkada
 Pricing:\
 5$/month&device
 https://alohartc.com/

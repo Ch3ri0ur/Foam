@@ -1,8 +1,4 @@
-#data to Raspberry Pi
-
-# B
-
-
+# Data to Raspberry Pi
 
 ## 4B+
 BCM2711 ARM Peripherals\
