@@ -62,5 +62,7 @@ Some modifications are needed to use the janus.js in the application:
 In Client 
 import Janus, {JanusJS} from "./janus"  //JanusJS if .d.ts are needed
 
-
+## ICE 1-1Nat mapping
+More on the ICE/NAT problematic in the readme
+https://github.com/bartbalaz/janus-container
 
