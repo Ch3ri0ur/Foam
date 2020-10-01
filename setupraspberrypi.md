@@ -1,41 +1,69 @@
 # Setup Raspberry Pi
+https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up
 
-## Flash OS
+## Install Raspberry Pi on SD Card
 
-Donwload img: https://www.raspberrypi.org/downloads/raspberry-pi-os/
-Choose Lite 
+https://www.raspberrypi.org/documentation/installation/installing-images/README.md
 
-Flash with for instance:
+### Download Image from Raspberry Pi homepage and using an Imager to install it
+
+ Prepare SD Card
+SD Card Formater
+https://www.sdcard.org/downloads/formatter/
+
+Download Image
+Raspberry Pi OS (32-bit) Lite
+from https://www.raspberrypi.org/downloads/raspberry-pi-os/
+
+Flash OS
 https://www.balena.io/etcher/ 
+https://win32diskimager.download/
 
+### Using Downloader and Installer from Raspberry Pi
 
-## Add SSH Access and Wifi 
+Raspberry Pi Imager
+from https://www.raspberrypi.org/downloads/
 
-For headless operation:
+## Configure Pi
+
+### For headless operation activate SSH and WiFi before starting
 https://www.raspberrypi.org/documentation/configuration/wireless/headless.md 
+
 - Enable SSH 
   - Put file with name "ssh" without extension in root folder of boot partition
-- (optional) Enable Wifi otherwise use Ethernet connection
-  - Put "wpa_supplicant.conf" file in root folder
+    https://www.elektronik-kompendium.de/sites/raspberry-pi/1906281.htm
+- Enable Wifi otherwise use Ethernet connection
+  - Put "wpa_supplicant.conf" file in root folder\
+    Content of wpa_supplicant.conf
+    adapt countrycode, ssid and psk:
+    ```
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    country=<Insert 2 letter ISO 3166-1 country code here e.g. DE> 
 
-Content of wpa_supplicant.conf
-adapt countrycode, ssid and psk:
-```
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-country=<Insert 2 letter ISO 3166-1 country code here e.g. DE> 
+    network={
+        ssid="<Name of your wireless LAN>"
+        psk="<Password for your wireless LAN>"
+    }
+    ```
+    Replace all ```<...>``` !
 
-network={
-    ssid="<Name of your wireless LAN>"
-    psk="<Password for your wireless LAN>"
-}
-```
+
+
 
 ## On first boot
 - change password with 
   - ```passwd```
 - update upgrade
-  - ````sudo apt update && sudo apt -y upgrade````
+  - ```sudo apt update && sudo apt -y upgrade```
+- optional
+  - activate ssh
+  - activate wifi
+  - expand file system
+
+https://www.elektronik-kompendium.de/sites/raspberry-pi/1906291.htm
+
+
 
 ## passwordless SSH
 add your public ssh key to ~/.ssh/authorized_keys (on the pi) for passwordless ssh connection
